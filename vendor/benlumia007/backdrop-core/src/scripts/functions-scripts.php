@@ -30,7 +30,6 @@ function load_scripts_and_styles() {
 	 */
 	wp_enqueue_style( 'backdrop-style', get_stylesheet_uri(), array(), '1.0.0' );
 	wp_enqueue_style( 'backdrop-normalize', get_theme_file_uri( '/vendor/benlumia007/backdrop-core/src/dist/css/normalize.css' ), array(), '1.0.0' );
-	wp_enqueue_style( 'backdrop-screen', get_theme_file_uri( '/vendor/benlumia007/backdrop-core/src/dist/css/screen.css' ), array(), '1.0.0' );
 
 	/**
 	 *  This will load local Google Fonts as part of the theme. Fira Sans and Merriweather. For more information regarding

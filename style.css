@@ -137,6 +137,12 @@ figure {
     margin: 0;
 }
 
+pre {
+	background: #eeeeee;
+	overflow: scroll;
+	padding: 1.125em;
+}
+
 /**
  *  3.0 - Forms
  */
@@ -467,6 +473,22 @@ a:focus {
 .content-area .post .entry-content,
 .content-area .post .entry-excerpt {
 	line-height: 1.7em;
+}
+
+.content-area .post .entry-taxonomies .cat-link,
+.content-area .post .entry-taxonomies .tag-link {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.content-area .post .entry-taxonomies .tag-link .fa-tags {
+	margin: 0;
+}
+
+.content-area .post .entry-taxonomies .tag-list,
+.content-area .post .entry-taxonomies .cat-list {
+	font-size: 12px;
 }
 
 /**

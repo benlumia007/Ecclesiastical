@@ -25,6 +25,6 @@
 			<?php Benlumia007\Backdrop\Site\display( 'site-description' ); ?>
 		</div>
 		<?php Benlumia007\Backdrop\Menu\display( 'primary' ); ?>
-		<?php the_custom_header_markup(); ?>
 	</header>
+	<?php the_custom_header_markup(); ?>
 	<section id="content" class="site-content">

@@ -213,7 +213,11 @@ blockquote {
 .site-header:before,
 .site-header.after,
 .site-content:before,
-.site-content:after {
+.site-content:after,
+.content-area:before,
+.content-area:after,
+.entry-content:before,
+.entry-content:after {
 	clear: both;
 	content: "";
 	display: table;
@@ -1159,6 +1163,53 @@ p.comment-awaiting-moderation {
 /**
  * 25.0 - Media Queries (Mobile Small 30em (480px))
  */
+ @media screen and (max-width: 30em) {
+	.site-container {
+		margin: 0;
+		padding: 0;
+	}
+
+	.site-branding {
+		padding: 1.125em;
+		text-align: center;
+	}
+
+	.site-content {
+		padding: 1.125em;
+	}
+
+    .menu-toggle,
+    .primary-navigation.toggled ul {
+        display: block;
+    }
+    
+	.primary-navigation ul {
+		display: none;
+	}
+    
+    .primary-navigation.toggled {
+        padding: 0.1em;
+    }
+    
+    .nav-menu {
+        margin-bottom: 3.6em;
+    }
+    
+    .primary-navigation .nav-menu {
+        display: none;
+    }
+    
+    .primary-navigation.toggled .nav-menu {
+        display: block;
+        margin: 1em 1em 3.6em 1em;
+    }
+    
+    .left-sidebar .content-area,
+    .right-sidebar .content-area {
+        float: none;
+        width: 100%;
+    }
+}
 
 /**
  * 26.0 - Media Queries (Mobile Small 37.5em (600px))

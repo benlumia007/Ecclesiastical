@@ -29,9 +29,9 @@ function load_custom_header() {
 	$args = array(
 		'default-text-color' => 'ffffff',
 		'default-image'      => get_theme_file_uri( '/vendor/benlumia007/backdrop-core/src/assets/images/header-image.jpg' ),
-		'height'             => 1200,
+		'height'             => 300,
 		'max-width'          => 2000,
-		'width'              => 2000,
+		'width'              => 1134,
 		'flex-height'        => false,
 		'flex-width'         => false,
 	);

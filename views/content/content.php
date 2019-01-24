@@ -13,9 +13,14 @@
 	<?php Benlumia007\Backdrop\Entry\display( 'entry-post-thumbnail' ); ?>
 	<header class="entry-header">
 		<?php Benlumia007\Backdrop\Entry\display( 'entry-title' ); ?>
-		<span class="entry-timestamp"><?php Benlumia007\Backdrop\Entry\display( 'entry-timestamp' ); ?></span>
 	</header>
-	<div class="entry-excerpt">
-		<?php the_excerpt(); ?>
+	<div class="entry-metadata">
+		<?php Benlumia007\Backdrop\Entry\display( 'entry-timestamp' ); ?>
+	</div>
+	<div class="entry-content">
+		<?php the_content(); ?>
+	</div>
+	<div class="entry-taxonomies">
+		<?php Benlumia007\Backdrop\Entry\display( 'entry-taxonomies' ); ?>
 	</div>
 </article>

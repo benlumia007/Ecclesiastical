@@ -50,6 +50,10 @@ function load_theme_setup() {
 		)
 	);
 
+	/**
+	 * By adding add_theme_support( 'editor-color-palette', array() );. THis will give users the ability to set different colors for background
+	 * and such.
+	 */
 	add_theme_support(
 		'editor-color-palette',
 		array(
@@ -57,6 +61,11 @@ function load_theme_setup() {
 				'name'  => esc_html__( 'Gray', 'ecclesiastical' ),
 				'slug'  => 'gray',
 				'color' => '#bebebe',
+			),
+			array(
+				'name'  => esc_html__( 'Light Blue', 'ecclesiastical' ),
+				'slug'  => 'light-blue',
+				'color' => '#add8e6',
 			),
 			array(
 				'name'  => esc_html__( 'Navy Blue', 'ecclesiastical' ),

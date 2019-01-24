@@ -1136,12 +1136,20 @@ p.comment-awaiting-moderation {
 	color: #bebebe;
 }
 
+.has-light-blue-color {
+	color: #add8e6;
+}
+
 .has-navy-blue-color {
 	color: #000080;
 }
 
 .has-gray-background-color {
 	background: #bebebe;
+}
+
+.has-light-blue-background-color {
+	background: #add8e6;
 }
 
 .has-navy-blue-background-color {

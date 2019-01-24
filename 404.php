@@ -23,7 +23,7 @@
 						$request_uri = ( isset( $_SERVER['REQUEST_URI'] ) ) ?: sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) );
 						printf(
 							// translators: 1 =  $request_uri.
-							esc_html__( "Just kidding! You tried going to %s, which doesn't exist, so that means I probably broke something. To find what you are looking for, check out the most recent articles below or try a search: ", 'initiator' ),
+							esc_html__( "Just kidding! You tried going to %s, which doesn't exist, so that means I probably broke something. To find what you are looking for, check out the most recent articles below or try a search: ", 'ecclesiastical' ),
 							'<code>' . esc_url( home_url( $request_uri ) ) . '</code>'
 						);
 						?>

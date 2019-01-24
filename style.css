@@ -143,6 +143,12 @@ pre {
 	padding: 1.125em;
 }
 
+blockquote {
+	border-left: 4px solid #000000;
+	margin: 0;
+	padding-left: 1em;
+}
+
 /**
  *  3.0 - Forms
  */
@@ -494,6 +500,251 @@ a:focus {
 /**
  * 17.0 - Content (Comments)
  */
+ .comments-area {
+	background: #ffffff;
+	margin: 1.125em 0;  
+	padding: 1.125em;  
+}
+
+.comments-title {
+    margin: 1.125em;
+    text-align: center;
+}
+
+.comment-list {
+    margin: 0;
+    padding: 0;
+}
+
+.comment-body {
+    border: 1px solid #cccccc;
+    margin-bottom: 1.125em;
+    padding: 1.125em;
+}
+
+.comments-area > ol  {
+    list-style-type: none;
+}
+
+.comment-author .avatar {
+    border: 4px solid #cccccc;
+    border-radius: 50%;
+    float: left; 
+    display: block;
+    margin-right: 10px;
+}
+
+.comment-author .fn {
+    font-size: 1.313em;
+    margin: 0;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.6em;
+    padding: 0;
+}
+
+.comment-meta {
+    font-size: 12px;
+}
+
+.comment-content {
+    display: block;
+    line-height: 1.7em;
+    margin: 2.625em 0.5em 0 0.5em;
+}
+
+
+.comments-area .says {
+    display: none;
+}
+
+.reply {
+	margin-bottom: 1.5em;
+	text-align: right;
+}
+
+.reply a {
+    background: #ffffff;
+    border: 0.063em solid #cccccc;
+    color: #373737;
+	display: inline-block;
+	padding: 0.5em 1.4em;
+	text-decoration: none;
+}
+
+.reply a:hover,
+.reply a:focus {
+	color: #373737;
+    text-decoration: underline;
+}
+
+.comment-list ol {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+ol.children {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.content-meta {
+    margin-left: 70px;
+}
+
+.comment-navigation {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+.comment-navigation i {
+    padding: 10px;
+}
+
+.comment-previous {
+    float: left;
+}
+.comment-next {
+    float: right;
+}
+
+.bypostauthor > .comment-body {
+    background: #f0f0f0; 
+    padding: 0.625em;
+    position: relative;
+}
+
+.comment-reply-title {
+    font-size: 1.250em;
+    margin: 0;
+    padding: 0;
+}
+
+.comment-form p {
+    margin: 0 0 1.5em 0;
+}
+
+.required {
+    color: #FF0000;
+    font-size: 0.625em;
+}
+
+.comment-awaiting-moderation {
+    background: #84BD68;
+    color: #ffffff;
+    font-size: 0.750em;
+    padding: 0.188em 0.250em;
+}
+
+.form-allowed-tags {
+    font-size: 0.813em;
+    width: 37.5em;
+}
+
+.comment-form .comment-form-author {
+    float: left;
+    display: block;
+}
+
+.comment-form .comment-form-author:before {
+    font-family: 'fontawesome';
+    content: "\f007";
+    float: left;
+    margin-left: 0.063em;
+    margin-right: 0.250em;
+}
+
+.comment-form .comment-form-email {
+    float: right;
+    display: block;
+}
+
+.comment-form .comment-form-email:before {
+    font-family: 'fontawesome';
+    content: "\f0e0";
+    float: left;
+    margin-left: 0.063em;
+    margin-right: 0.250em;
+}
+
+
+.comment-form .comment-form-url {
+	clear: both;
+    margin-bottom: 1.3em;
+    width: 100%;
+}
+
+.comment-form .comment-form-url:before {
+    font-family: 'fontawesome';
+    content: "\f0ac";
+    float: left;
+    margin-left: 0.063em;
+    margin-right: 0.250em;
+}
+
+.comment-form .comment-form-comment label,
+.comment-form .comment-form-author label,
+.comment-form .comment-form-email label,
+.comment-form .comment-form-url label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.250em;
+}
+
+.comment-form .comment-form-comment:before {
+    font-family: 'fontawesome';
+    content: "\f075";
+    float: left;
+    margin-left: 0.063em;
+    margin-right: 0.250em;
+}
+
+.comment-form .comment-form-comment textarea {
+    border: 0.063em solid #cccccc;
+    font-family: 'Merriewather', serif;
+    font-size: 1em;
+    min-height: 12.375em;
+    width: 100%;
+}
+
+.comment-form .comment-form-author input[type="text"],
+.comment-form .comment-form-email input[type="email"] {
+    border: 0.063em solid #cccccc;
+    font-family: 'Merriewather', serif;
+    font-size: 1em;
+    padding: 0.6em;
+    width: 23em;
+}
+
+.comment-form .comment-form-url input[type="url"] {
+    border: 0.063em solid #cccccc;
+    font-family: 'Merriewather', serif;
+    font-size: 1em;
+    padding: 0.6em;
+    width: 100%;
+}
+
+.comment-form .comment-notes {
+    font-size: 12px;
+}
+
+p.comment-awaiting-moderation {
+    margin: 0.125em 0 0 4.063em;
+    padding: 0.188em 0.313em;
+}
+
+.comment-subscription-form .subscribe-label {
+    display: inline !important;
+    font-size: 0.875em;
+}
+
+.comment-form .comment-form-cookies-consent {
+    font-size: 14px;
+}
+
+.comment-form .comment-form-cookies-consent input[type="checkbox"] {
+    margin-right: 0.250em;
+}
 
 /**
  * 18.0 - Content (Archives)
@@ -678,10 +929,90 @@ a:focus {
 /**
  * 22.0 - Captions
  */
+ .wp-caption {
+    max-width: 100%;
+    margin-bottom: 1.5em;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.wp-caption-text {
+    text-align: center;
+}
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+    background: #eeeeee;
+    font-size: 0.938em;
+    padding: 0.313em;
+    text-align: center;
+}
+
+.wp-caption p {
+    margin: 0;
+    padding: 0;
+}
 
 /**
  * 23.0 - Galleries
  */
+ .gallery-size-thumbnail {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.125em;
+}
+
+.gallery-column-2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1.125em;
+}
+
+.gallery-column-3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1.125em;
+}
+
+.gallery-column-4 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 1.125em;
+}
+
+.gallery-column-5 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 1.125em;
+}
+
+.gallery-column-6 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 1.125em;
+}
+
+.gallery-column-7 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 1.125em;
+}
+
+.gallery-column-8 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 1.125em;
+}
+
+.gallery-column-9 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 1.125em;
+}
 
 /**
  * 24.0 - Media Queries (Mobile Small 30em (480px))

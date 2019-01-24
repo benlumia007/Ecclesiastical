@@ -50,6 +50,22 @@ function load_theme_setup() {
 		)
 	);
 
+	add_theme_support(
+		'editor-color-palette',
+		array(
+			array(
+				'name'  => esc_html__( 'Gray', 'ecclesiastical' ),
+				'slug'  => 'gray',
+				'color' => '#bebebe',
+			),
+			array(
+				'name'  => esc_html__( 'Navy Blue', 'ecclesiastical' ),
+				'slug'  => 'navy-blue',
+				'color' => '#000080',
+			),
+		)
+	);
+
 	/**
 	 * By adding add_theme_support( 'post-thumbnails' );, this feature when enabled allows you to setup featured images
 	 * also known as featured image. If you need to use conditional, please consider using has_post_thumbnail.

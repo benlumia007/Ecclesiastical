@@ -60,8 +60,8 @@ function display( $feature = '' ) {
 		);
 		printf(
 			'<span class="by-author"><b>%1$s</b></span><span class="published"><b>%2$s</b></span>',
-			$author, // phpcs:ignore
-			$date // phpcs:ignore
+			$author, // phpcs:ignore WordPress.Security.EscapeOutput
+			$date // phpcs:ignore WordPress.Security.EscapeOutput
 		);
 	} elseif ( 'entry-timestamp' === $feature ) {
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';

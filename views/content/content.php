@@ -12,6 +12,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php Benlumia007\Backdrop\Entry\display( 'entry-post-thumbnail' ); ?>
 	<header class="entry-header">
+		<?php if ( is_sticky() && is_home() && ! is_paged() ) { ?>
+			<?php printf( '<span class="sticky-post">%1$s</span>', esc_html__( 'Featured', 'ecclesiastical' ) ); ?>
+		<?php } ?>
 		<?php Benlumia007\Backdrop\Entry\display( 'entry-title' ); ?>
 	</header>
 	<div class="entry-metadata">

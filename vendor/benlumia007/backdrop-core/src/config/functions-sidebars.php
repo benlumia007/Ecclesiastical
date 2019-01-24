@@ -28,8 +28,8 @@ function register_sidebars() {
 	*/
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Primary Sidebar', 'backdrop' ),
-			'description'   => esc_html__( 'Add widgets here to appear in your sidebar on Blog Posts and Archives only', 'backdrop' ),
+			'name'          => esc_html__( 'Primary Sidebar', 'ecclesiastical' ),
+			'description'   => esc_html__( 'Add widgets here to appear in your sidebar on Blog Posts and Archives only', 'ecclesiastical' ),
 			'id'            => 'sidebar-primary',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</aside>',
@@ -43,8 +43,8 @@ function register_sidebars() {
 	 */
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Custom Sidebar', 'backdrop' ),
-			'description'   => esc_html__( 'Add widgets here to appear in your sidebar on custom pages only', 'backdrop' ),
+			'name'          => esc_html__( 'Custom Sidebar', 'ecclesiastical' ),
+			'description'   => esc_html__( 'Add widgets here to appear in your sidebar on custom pages only', 'ecclesiastical' ),
 			'id'            => 'sidebar-custom',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</aside>',

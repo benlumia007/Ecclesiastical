@@ -50,7 +50,7 @@ function display( $feature = '' ) {
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			esc_attr(
 				// Translators: 1 = get the author.
-				sprintf( __( 'View all posts by %s', 'backdrop' ), get_the_author() )
+				sprintf( __( 'View all posts by %s', 'ecclesiastical' ), get_the_author() )
 			),
 			get_the_author()
 		);
@@ -77,18 +77,18 @@ function display( $feature = '' ) {
 		);
 		$posted_on   = sprintf(
 			// Translators: 1 = screen reader text, 2 = post date.
-			__( '%1$s %2$s', 'backdrop' ),
+			__( '%1$s %2$s', 'ecclesiastical' ),
 			'<span class="screen-reader-text">Posted on</span>',
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 		echo '<span class="entry-timestamp">' . $posted_on . '</span>'; // phpcs:ignore
 	} elseif ( 'entry-title' === $feature ) {
 		if ( is_404() ) { ?>
-			<h1 class="entry-title"><?php esc_html_e( 'Whoa! You broke something', 'backdrop' ); ?></h1>
+			<h1 class="entry-title"><?php esc_html_e( 'Whoa! You broke something', 'ecclesiastical' ); ?></h1>
 			<?php
 		} elseif ( is_search() ) {
 			?>
-			<h1 class="entry-title"><?php esc_html_e( 'Nothing Found', 'backdrop' ); ?></h1>
+			<h1 class="entry-title"><?php esc_html_e( 'Nothing Found', 'ecclesiastical' ); ?></h1>
 			<?php
 		} elseif ( is_single() ) {
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -98,19 +98,19 @@ function display( $feature = '' ) {
 			the_title( sprintf( '<h1 class="entry-title"><a href="%s">', esc_url( get_permalink() ) ), '</a></h1>' );
 		}
 	} elseif ( 'entry-taxonomies' === $feature ) {
-		$cat_list = get_the_category_list( esc_html__( ' | ', 'backdrop' ) );
-		$tag_list = get_the_tag_list( '', esc_html__( ' | ', 'backdrop' ) );
+		$cat_list = get_the_category_list( esc_html__( ' | ', 'ecclesiastical' ) );
+		$tag_list = get_the_tag_list( '', esc_html__( ' | ', 'ecclesiastical' ) );
 		if ( $cat_list ) {
 			printf(
 				'<div class="cat-link"><i class="fa fa-folder-open-o"></i> %1$s <span class="cat-list"l><b><i>%2$s</i></b></span></div>',
-				esc_html__( ' Posted In', 'backdrop' ),
+				esc_html__( ' Posted In', 'ecclesiastical' ),
 				$cat_list // phpcs:ignore
 			);
 		}
 		if ( $tag_list ) {
 			printf(
 				'<div class="tag-link"><i class="fa fa-tags"></i> %1$s <span class="tag-list"><b><i>%2$s</i></b></span></div>',
-				esc_html__( ' Tagged', 'backdrop' ),
+				esc_html__( ' Tagged', 'ecclesiastical' ),
 				$tag_list // phpcs:ignore
 			);
 		}

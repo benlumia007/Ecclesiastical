@@ -20,17 +20,17 @@
 					// Translators: 1 = Date, 2 = Site Link.
 					esc_html__( 'Copyright &#169; %1$s. %2$s', 'ecclesiastical' ),
 					absint( date_i18n( 'Y' ) ),
-					Benlumia007\Backdrop\Site\display( 'site-link' )
-				); // WPCS XSS OK.
+					Benlumia007\Backdrop\Site\display( 'site-link' ) // phpcs:ignore
+				);
 				?>
 			<br />
 			<?php
 				printf(
 					// Translators: 1 = WordPress Link, 2 = Theme Link.
 					esc_html__( 'Powered By %1$s and %2$s', 'ecclesiastical' ),
-					Benlumia007\Backdrop\Site\display( 'wp-link' ),
-					Benlumia007\Backdrop\Site\display( 'theme-link' )
-				); // WPCS XSS OK.
+					Benlumia007\Backdrop\Site\display( 'wp-link' ), // phpcs:ignore
+					Benlumia007\Backdrop\Site\display( 'theme-link' ) // phpcs:ignore
+				);
 				?>
 		</div>
 	</footer>

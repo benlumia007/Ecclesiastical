@@ -39,7 +39,7 @@ function display( $feature = '' ) {
 	} elseif ( 'site-link' === $feature ) {
 		return sprintf( '<a href="%s">%s</a>', esc_url( home_url( '/' ) ), get_bloginfo( 'name' ) );
 	} elseif ( 'wp-link' === $feature ) {
-		return sprintf( '<a href="%s">%s</a>', esc_url( __( 'https://wordpress.org', 'backdrop' ) ), esc_html__( 'WordPress', 'backdrop' ) );
+		return sprintf( '<a href="%s">%s</a>', esc_url( __( 'https://wordpress.org', 'ecclesiastical' ) ), esc_html__( 'WordPress', 'ecclesiastical' ) );
 	} elseif ( 'theme-link' === $feature ) {
 		$theme_name = wp_get_theme( get_template() );
 		$allowed    = array(

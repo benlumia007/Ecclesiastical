@@ -41,7 +41,7 @@ function load_custom_header() {
 			'header-image' => array(
 				'url'           => '%s/vendor/benlumia007/backdrop-core/src/assets/images/header-image.jpg',
 				'thumbnail_url' => '%s/vendor/benlumia007/backdrop-core/src/assets/images/header-image.jpg',
-				'description'   => esc_html__( 'Header Image', 'backdrop' ),
+				'description'   => esc_html__( 'Header Image', 'ecclesiastical' ),
 			),
 		)
 	);

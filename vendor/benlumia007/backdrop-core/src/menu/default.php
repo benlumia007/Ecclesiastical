@@ -29,7 +29,7 @@ function display( $feature = '' ) {
 		if ( has_nav_menu( 'primary' ) ) { ?>
 			<div class="main-navigation">
 				<nav id="site-navigation" class="primary-navigation">
-					<button class="menu-toggle" aria-conrol="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'backdrop' ); ?></button>
+					<button class="menu-toggle" aria-conrol="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'ecclesiastical' ); ?></button>
 					<?php
 						wp_nav_menu(
 							array(
@@ -48,7 +48,7 @@ function display( $feature = '' ) {
 			?>
 			<div class="main-navigation">
 				<nav id="site-navigation" class="primary-navigation">
-					<button class="menu-toggle" aria-conrol="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'backdrop' ); ?></button>
+					<button class="menu-toggle" aria-conrol="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'ecclesiastical' ); ?></button>
 					<?php
 						wp_nav_menu(
 							array(

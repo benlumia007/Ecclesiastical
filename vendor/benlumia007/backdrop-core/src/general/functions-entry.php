@@ -60,9 +60,9 @@ function display( $feature = '' ) {
 		);
 		printf(
 			'<span class="by-author"><b>%1$s</b></span><span class="published"><b>%2$s</b></span>',
-			$author,
-			$date
-		); // WPCS XSS OK.
+			$author, // phpcs:ignore
+			$date // phpcs:ignore
+		);
 	} elseif ( 'entry-timestamp' === $feature ) {
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
@@ -81,7 +81,7 @@ function display( $feature = '' ) {
 			'<span class="screen-reader-text">Posted on</span>',
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
-		echo '<span class="entry-timestamp">' . $posted_on . '</span>'; // WPCS: XSS OK.
+		echo '<span class="entry-timestamp">' . $posted_on . '</span>'; // phpcs:ignore
 	} elseif ( 'entry-title' === $feature ) {
 		if ( is_404() ) { ?>
 			<h1 class="entry-title"><?php esc_html_e( 'Whoa! You broke something', 'backdrop' ); ?></h1>
@@ -104,15 +104,15 @@ function display( $feature = '' ) {
 			printf(
 				'<div class="cat-link"><i class="fa fa-folder-open-o"></i> %1$s <span class="cat-list"l><b><i>%2$s</i></b></span></div>',
 				esc_html__( ' Posted In', 'backdrop' ),
-				$cat_list
-			); // WPCS XSS OK.
+				$cat_list // phpcs:ignore
+			);
 		}
 		if ( $tag_list ) {
 			printf(
 				'<div class="tag-link"><i class="fa fa-tags"></i> %1$s <span class="tag-list"><b><i>%2$s</i></b></span></div>',
 				esc_html__( ' Tagged', 'backdrop' ),
-				$tag_list
-			); // WPCS XSS OK.
+				$tag_list // phpcs:ignore
+			);
 		}
 	}
 }

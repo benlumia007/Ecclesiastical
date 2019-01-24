@@ -58,6 +58,11 @@ function load_theme_setup() {
 		'editor-color-palette',
 		array(
 			array(
+				'name'  => esc_html__( 'Black', 'ecclesiastical' ),
+				'slug'  => 'black',
+				'color' => '#000000',
+			),
+			array(
 				'name'  => esc_html__( 'Gray', 'ecclesiastical' ),
 				'slug'  => 'gray',
 				'color' => '#bebebe',
@@ -71,6 +76,11 @@ function load_theme_setup() {
 				'name'  => esc_html__( 'Navy Blue', 'ecclesiastical' ),
 				'slug'  => 'navy-blue',
 				'color' => '#000080',
+			),
+			array(
+				'name'  => esc_html__( 'White', 'ecclesiastical' ),
+				'slug'  => 'white',
+				'color' => '#ffffff',
 			),
 		)
 	);

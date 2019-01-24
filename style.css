@@ -1136,6 +1136,10 @@ p.comment-awaiting-moderation {
 /**
  * 24.0 - Block Editor (Colors)
  */
+.has-black-color {
+	color: #000000;
+}
+
 .has-gray-color {
 	color: #bebebe;
 }
@@ -1148,6 +1152,14 @@ p.comment-awaiting-moderation {
 	color: #000080;
 }
 
+.has-white-color {
+	color: #ffffff;
+}
+
+.has-black-background-color {
+	background: #000000;
+}
+
 .has-gray-background-color {
 	background: #bebebe;
 }
@@ -1158,6 +1170,10 @@ p.comment-awaiting-moderation {
 
 .has-navy-blue-background-color {
 	background: #000080;
+}
+
+.has-white-background-color {
+	background: #ffffff;
 }
 
 /**

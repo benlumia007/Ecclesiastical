@@ -28,7 +28,7 @@ function load_custom_header() {
 	 */
 	$args = array(
 		'default-text-color' => 'ffffff',
-		'default-image'      => get_theme_file_uri( '/assets/images/header-image.jpg' ),
+		'default-image'      => get_theme_file_uri( '/vendor/benlumia007/backdrop-core/src/assets/images/header-image.jpg' ),
 		'height'             => 1200,
 		'max-width'          => 2000,
 		'width'              => 2000,
@@ -39,8 +39,8 @@ function load_custom_header() {
 	register_default_headers(
 		array(
 			'header-image' => array(
-				'url'           => '%s/assets/images/header-image.jpg',
-				'thumbnail_url' => '%s/assets/images/header-image.jpg',
+				'url'           => '%s/vendor/benlumia007/backdrop-core/src/assets/images/header-image.jpg',
+				'thumbnail_url' => '%s/vendor/benlumia007/backdrop-core/src/assets/images/header-image.jpg',
 				'description'   => esc_html__( 'Header Image', 'backdrop' ),
 			),
 		)
@@ -71,7 +71,7 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\load_custom_header_styles' )
  *  2.0 - Includes (Custom Header Styles)
  */
 function load_header_image_inline_style() {
-	$header_image = esc_url( get_theme_mod( 'header_image', get_theme_file_uri( '/assets/images/header-image.jpg' ) ) );
+	$header_image = esc_url( get_theme_mod( 'header_image', get_theme_file_uri( '/vendor/benlumia007/backdrop-core/src/assets/images/header-image.jpg' ) ) );
 	$custom_css   = "
 		.site-header.header-image{
 			background: url({$header_image});

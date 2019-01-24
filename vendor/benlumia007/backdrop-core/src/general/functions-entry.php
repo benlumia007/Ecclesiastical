@@ -37,7 +37,7 @@ function display( $feature = '' ) {
 				the_post_thumbnail( "backdrop-{$size}-thumbnails" );
 			}
 		}
-	} elseif ( 'posted-on' === $feature ) {
+	} elseif ( 'entry-posted-on' === $feature ) {
 		$avatar_size = apply_filters( 'author_avatar_size', 80 );
 		$date        = sprintf(
 			'<a href="%1$s" title="%2$s" rel="bookmark"><span class="entry-date">%3$s</span></a>',
@@ -63,7 +63,7 @@ function display( $feature = '' ) {
 			$author,
 			$date
 		); // WPCS XSS OK.
-	} elseif ( 'entry_timestamp' === $feature ) {
+	} elseif ( 'entry-timestamp' === $feature ) {
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';

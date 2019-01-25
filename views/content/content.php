@@ -18,7 +18,7 @@
 		<?php Benlumia007\Backdrop\Entry\display( 'entry-title' ); ?>
 	</header>
 	<div class="entry-metadata">
-		<?php Benlumia007\Backdrop\Entry\display( 'entry-timestamp' ); ?>
+		<?php Benlumia007\Backdrop\Entry\display( 'entry-posted-on' ); ?>
 	</div>
 	<div class="entry-content">
 		<?php the_content(); ?>

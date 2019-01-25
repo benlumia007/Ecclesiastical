@@ -118,7 +118,6 @@ body {
 
 html {
 	box-sizing: border-box;
-	overflow: hidden;
 }
 
 *,
@@ -587,6 +586,10 @@ a:focus {
 	width: 25%;
 }
 
+.content-area .post .entry-header {
+	text-align: center;
+}
+
 .content-area .post .entry-header .entry-title {
 	margin: 0;
 	padding: 0;
@@ -595,6 +598,38 @@ a:focus {
 .content-area .post .entry-content,
 .content-area .post .entry-excerpt {
 	line-height: 1.7em;
+}
+
+.content-area .post .entry-metadata,
+.content-area .attachment .entry-metadata {
+    background: #eeeeee;
+    border-left: 5px solid #21759b;
+    margin: 1.250em 0;
+    padding: 1em;
+    text-align: center;
+}
+
+.content-area .post .entry-metadata .avatar,
+.content-area .attachment .entry-metadata .avatar {
+    border: 0.500em solid #cccccc;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.content-area .post .entry-metadata .by-author,
+.content-area .attachment .entry-metadata .by-author {
+    display: block;
+    font-size: 1.250em;
+}
+
+.content-area .post .entry-metadata .published,
+.content-area .post .entry-metadata .entry-comments,
+.content-area .attachment .entry-metadata .published,
+.content-area .attachment .entry-metadata .entry-comments {
+    display: block;
+    padding: 0.063em 0;
+    font-size: 12px;
 }
 
 .content-area .post .entry-taxonomies .cat-link,
